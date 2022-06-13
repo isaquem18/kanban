@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AskApp</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="new-ask.css" />
+</head>
+
+<body>
+  <header class="header">
+    <h1>myAsks</h1>
+    <button class="newAskButton"><</button>
+  </header>
+  <section class="searchHomeSectionContainer">
+    <div class="searchHomeSection">
+      <form class="submitSearchAskForm">
+        <div class="titleSearchFormContainer">
+          <h2>Criar nova pergunta</h2>
+        </div>
+        <div class="inputValueSearchContainer">
+          <input type="text" class="askTitle" />
+          <textarea class="askText"></textarea>
+          <button type="submit" class="submitButton"><img src="/images/plus.svg" />
+            Adicionar
+          </button>
+        </div>
+      </form>
+    </div>
+  </section>
+  <script type="module" src="new-ask.js"></script>
+</body>
+
+</html>

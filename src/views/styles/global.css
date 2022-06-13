@@ -1,0 +1,29 @@
+:root {
+  --bg: #f4f4f4;
+  --header_text: #f4f4f4;
+  --ligthOrange_500: #ff9f4b;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+button, a {
+  cursor: pointer;
+}
+
+@media (max-width: 1080px) {
+  html {
+    font-size: 90%;
+  }
+}
+
+@media (max-width: 720px) {
+  html {
+    font-size: 80%;
+  }
+}
+

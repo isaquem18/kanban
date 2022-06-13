@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AskApp</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="index.css" />
+</head>
+<body>
+  <header class="header">
+    <h1>myAsks</h1>
+    <button class="newAskButton">Criar nova pergunta</button>
+  </header>
+  <section class="searchHomeSection">
+    <div class="titleSearchFormContainer">
+      <form class="submitSearchAskForm">
+        <h2>Pesquisar peguntas já feitas</h2>
+        
+        <div class="inputValueSearchContainer">
+          <input type="search" class="askInput" /> 
+          <button type="submit" class="submitButton"><img src="/images/search.svg" />Buscar</button>
+        </div>
+      </form>
+      <div class="askList">
+        <% response.forEach(item => { %>
+          <div style="
+            display: flex; 
+            flex-direction: column; 
+            background-color: #fff; 
+            padding: 20px 10px;
+            width: 100%;
+            margin: 10px 0px;
+            overflow: hidden;
+          ">
+            <span><%= item?.title %></span>
+            <span><%= item?.text %></span>
+          </div>
+        <% }) %>
+      </div>
+    </div>
+  </section>
+  <%- include('partials/footer.ejs') %>
+  <script type="module" src="index.js"></script>
+</body>
+</html>
