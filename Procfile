@@ -1,3 +1,3 @@
 yarn
+yarn tsc
 yarn start
-yarn build
