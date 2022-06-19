@@ -1,1 +1,3 @@
-web: yarn start
+yarn
+yarn start
+yarn build
