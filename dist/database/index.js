@@ -27,9 +27,9 @@ const mysql = __importStar(require("mysql2"));
 class DB {
     init() {
         return mysql.createConnection({
-            host: 'localhost',
-            user: 'root',
-            database: 'ASKS',
+            host: process.env.DB_HOSTNAME,
+            user: process.env.DB_USERNAME,
+            database: process.env.DATABASE,
             password: process.env.DB_PASSWORD
         });
     }
