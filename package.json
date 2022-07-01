@@ -11,7 +11,7 @@
   "author": "isaque-patricio <isaquem18@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "server": "yarn && tsc && node ./dist/index.js",
+    "server": "yarn && tsc && node dist/index.js",
     "deploy": "git add . && git commit -m 'heroku' && git push"
   },
   "devDependencies": {
