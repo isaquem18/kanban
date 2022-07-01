@@ -7,7 +7,8 @@ export default class DB {
       host: process.env.DB_HOSTNAME,
       user: process.env.DB_USERNAME,
       database: process.env.DATABASE,
-      password: process.env.DB_PASSWORD
+      password: process.env.DB_PASSWORD,
+      port: 3306
     });
   }
 }

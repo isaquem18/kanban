@@ -7,8 +7,8 @@ import { Ask } from './controllers/Ask';
 
 const app = express();
 
-app.use(express.json());
 app.use(cors());
+app.use(express.json());
 app.set('view engine', 'ejs');
 app.set('views', resolve('src', 'views', 'screens'));
 app.use(express.static(resolve('src', 'views', 'styles')));
